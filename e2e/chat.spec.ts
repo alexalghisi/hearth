@@ -17,7 +17,7 @@ test.beforeEach(async ({ page }) => {
 test("streams a local reply and shows author contact", async ({ page }) => {
   await page.goto("/");
   await expect(page.getByRole("heading", { name: "Hearth" })).toBeVisible();
-  await expect(page.getByTestId("author-credit")).toContainText("Alghisi Alessandro Paolo");
+  await expect(page.getByTestId("author-credit")).toContainText("Alessandro Alghisi");
   await expect(page.getByTestId("select-model")).toHaveValue("llama3.2:latest");
 
   await page.getByTestId("input-prompt").fill("Who are you?");

@@ -29,7 +29,7 @@ The match rule of Kindred lived in one file. The Ollama client here lives in
 
 ## Author
 
-### Alghisi Alessandro Paolo
+### Alessandro Alghisi
 
 Senior Software Engineer · Cluj-Napoca, Romania
 
@@ -77,4 +77,4 @@ E2E does not need a live Ollama — Playwright stubs `/ollama`.
 
 ## License
 
-MIT · © Alghisi Alessandro Paolo
+MIT · © Alessandro Alghisi
