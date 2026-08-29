@@ -1,29 +1,23 @@
 # Hearth
 
-Your own AI chat. It runs on **this Mac**, talks to
-[Ollama](https://ollama.com), and never sends a prompt to Anthropic, OpenAI, or
-Google.
+A local-first chat client for [Ollama](https://ollama.com). Inference runs on
+the machine that opened the window. Prompts are not sent to Anthropic, OpenAI,
+or Google.
 
-This is not a secret clone of Claude. Nobody trains a frontier model overnight.
-Hearth is the honest version: an open-source window you own, plus open weights
-you download once. After that, the meter is off.
+Hearth does not claim to be a frontier model. It is the honest architecture:
+open weights you download once, a Vite proxy past CORS, and a streaming UI you
+can read.
 
 **React 19 · TypeScript (strict) · Vite 8 · Tailwind CSS 4 · Zustand · Vitest ·
 Playwright**
 
 ---
 
-## Why this exists
+## Architecture
 
-Renting ChatGPT / Claude / Gemini is a subscription on someone else's GPU.
-Hearth's loop is:
-
-1. Ollama serves a local model (`llama3.2`, `phi3`, `qwen2.5`, …).
-2. Vite proxies `/ollama` → `127.0.0.1:11434` so the browser skips CORS.
-3. The chat UI streams tokens into the Mac window.
-
-The match rule of Kindred lived in one file. The Ollama client here lives in
-[`src/lib/ollama.ts`](src/lib/ollama.ts). Fork it.
+1. Ollama serves a local model (`llama3.2`, `phi3`, `qwen2.5`, and others).
+2. Vite proxies `/ollama` → `127.0.0.1:11434`.
+3. The client in [`src/lib/ollama.ts`](src/lib/ollama.ts) streams tokens into the Mac window.
 
 ---
 
@@ -40,11 +34,11 @@ and Logs (Mountain View).
 | -------- | --------------------------------------------------------------------------------------- |
 | GitHub   | [github.com/alexalghisi](https://github.com/alexalghisi)                                |
 | LinkedIn | [linkedin.com/in/alghisi](https://www.linkedin.com/in/alghisi)                          |
-| Email    | [alessandro@onlineparentingprograms.com](mailto:alessandro@onlineparentingprograms.com) |
+| Email    | [alexalghisi@gmail.com](mailto:alexalghisi@gmail.com)                                   |
 | Location | Cluj-Napoca, Romania · open to remote / EU / US-friendly timezones                      |
 
 **Hiring?** Open an issue, message me on LinkedIn, or email
-[alessandro@onlineparentingprograms.com](mailto:alessandro@onlineparentingprograms.com).
+[alexalghisi@gmail.com](mailto:alexalghisi@gmail.com).
 
 ---
 
