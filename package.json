@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Your own local AI chat. Talks to Ollama on this Mac. No Claude, ChatGPT, or Gemini bill.",
+  "description": "Local-first chat client for Ollama. Inference stays on the machine; the UI streams open weights.",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
