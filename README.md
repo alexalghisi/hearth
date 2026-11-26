@@ -4,6 +4,10 @@ A local-first chat client for [Ollama](https://ollama.com). Inference runs on
 the machine that opened the window. Prompts are not sent to Anthropic, OpenAI,
 or Google.
 
+**Download:** [latest release](https://github.com/alexalghisi/hearth/releases/latest)
+
+![hearth running](docs/preview.png)
+
 Hearth does not claim to be a frontier model. It is the honest architecture:
 open weights you download once, a Vite proxy past CORS, and a streaming UI you
 can read.
